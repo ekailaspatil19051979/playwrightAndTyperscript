@@ -375,3 +375,153 @@
 {"level":"info","message":"PlannerAgent subtasks: [\"Subtask for: Test Flipkart home page UI\"]","timestamp":"2025-12-23T13:38:14.524Z"}
 {"level":"info","message":"HealerAgent suggestion: // Suggested fix for: Footer links not accessible","timestamp":"2025-12-23T13:38:17.209Z"}
 {"level":"info","message":"Finished Flipkart Home Page UI tests","timestamp":"2025-12-23T13:38:17.369Z"}
+{"level":"info","message":"Starting Mobiles and Tablets Filters tests","timestamp":"2025-12-25T13:56:46.414Z"}
+{"level":"info","message":"Starting API CRUD & Security Tests","timestamp":"2025-12-25T13:56:46.427Z"}
+{"level":"info","message":"Starting Product Search tests","timestamp":"2025-12-25T13:56:46.477Z"}
+{"level":"info","message":"PlannerAgent subtasks: [\"Subtask for: Test mobiles and tablets filters feature\"]","timestamp":"2025-12-25T13:56:46.419Z"}
+{"level":"info","message":"Starting Flipkart Home Page UI tests","timestamp":"2025-12-25T13:56:46.499Z"}
+{"level":"info","message":"Test: should support GET, POST, PUT, DELETE methods","timestamp":"2025-12-25T13:56:46.515Z"}
+{"level":"info","message":"PlannerAgent subtasks: [\"Subtask for: Test product search feature\"]","timestamp":"2025-12-25T13:56:46.486Z"}
+{"level":"info","message":"PlannerAgent subtasks: [\"Subtask for: Test Flipkart home page UI\"]","timestamp":"2025-12-25T13:56:46.507Z"}
+{"level":"info","message":"Test: should load successfully","timestamp":"2025-12-25T13:56:47.629Z"}
+{"level":"info","message":"Setting up MobilesFiltersPage","timestamp":"2025-12-25T13:56:47.621Z"}
+{"level":"info","message":"Test: should display search results for a valid product","timestamp":"2025-12-25T13:56:47.626Z"}
+{"level":"info","message":"Test: should validate input (positive & negative)","timestamp":"2025-12-25T13:56:48.167Z"}
+{"level":"info","message":"Test: should return correct HTTP status codes","timestamp":"2025-12-25T13:56:48.665Z"}
+{"level":"info","message":"Test: should require authentication","timestamp":"2025-12-25T13:56:48.944Z"}
+{"level":"info","message":"Test: should not expose sensitive data","timestamp":"2025-12-25T13:56:49.203Z"}
+{"level":"info","message":"Test: should handle missing/invalid params gracefully","timestamp":"2025-12-25T13:56:49.463Z"}
+{"level":"info","message":"Test: should adhere to JSON response format","timestamp":"2025-12-25T13:56:49.740Z"}
+{"level":"info","message":"Test: should support required headers","timestamp":"2025-12-25T13:56:50.007Z"}
+{"level":"info","message":"Test: should enforce rate limiting","timestamp":"2025-12-25T13:56:50.265Z"}
+{"level":"info","message":"Navigated to Flipkart home page","timestamp":"2025-12-25T13:56:51.792Z"}
+{"level":"info","message":"Navigated to product search page","timestamp":"2025-12-25T13:56:51.817Z"}
+{"level":"info","message":"Navigated to mobiles filters page","timestamp":"2025-12-25T13:56:52.226Z"}
+{"level":"info","message":"Test: should apply filters correctly","timestamp":"2025-12-25T13:56:52.227Z"}
+{"level":"info","message":"Available brands: Apple, Google, MOTOROLA, vivo, OPPO, Infinix","timestamp":"2025-12-25T13:56:52.364Z"}
+{"level":"info","message":"Testing with brand: OPPO","timestamp":"2025-12-25T13:56:52.364Z"}
+{"level":"info","message":"Home page loaded and visible","timestamp":"2025-12-25T13:56:52.697Z"}
+{"level":"info","message":"Test: should display visible and clickable Flipkart logo","timestamp":"2025-12-25T13:56:52.951Z"}
+{"level":"info","message":"Searched for Samsung S24 Ultra","timestamp":"2025-12-25T13:56:53.293Z"}
+{"level":"info","message":"Navigated to Flipkart home page","timestamp":"2025-12-25T13:56:54.234Z"}
+{"level":"info","message":"Applied filter for brand: OPPO","timestamp":"2025-12-25T13:56:54.904Z"}
+{"level":"info","message":"Test: should respond within reasonable time","timestamp":"2025-12-25T13:56:55.098Z"}
+{"level":"info","message":"Test: should handle errors and exceptions","timestamp":"2025-12-25T13:56:55.368Z"}
+{"level":"info","message":"Flipkart logo clicked and verified","timestamp":"2025-12-25T13:56:55.514Z"}
+{"level":"info","message":"Filtered results count: 24","timestamp":"2025-12-25T13:56:55.517Z"}
+{"level":"info","message":"GeneratorAgent code: // Generated code for: Assert at least one product contains 'OPPO'","timestamp":"2025-12-25T13:56:55.518Z"}
+{"level":"info","message":"Filter application test completed","timestamp":"2025-12-25T13:56:55.524Z"}
+{"level":"info","message":"Test: should cache repeated requests if supported","timestamp":"2025-12-25T13:56:55.639Z"}
+{"level":"info","message":"Test: should have present and enabled search bar","timestamp":"2025-12-25T13:56:55.719Z"}
+{"level":"info","message":"Setting up MobilesFiltersPage","timestamp":"2025-12-25T13:56:55.723Z"}
+{"level":"info","message":"Finished API CRUD & Security Tests","timestamp":"2025-12-25T13:56:56.129Z"}
+{"level":"info","message":"Starting Flipkart T-shirt purchase flow test","timestamp":"2025-12-25T13:56:56.835Z"}
+{"level":"info","message":"Navigating to Flipkart home page","timestamp":"2025-12-25T13:56:56.835Z"}
+{"level":"info","message":"Navigated to Flipkart home page","timestamp":"2025-12-25T13:56:57.156Z"}
+{"level":"info","message":"Search results count: 24","timestamp":"2025-12-25T13:56:57.477Z"}
+{"level":"info","message":"GeneratorAgent code: // Generated code for: Assert search results > 0","timestamp":"2025-12-25T13:56:57.478Z"}
+{"level":"info","message":"Valid product search test completed","timestamp":"2025-12-25T13:56:57.484Z"}
+{"level":"info","message":"Navigated to mobiles filters page","timestamp":"2025-12-25T13:56:57.553Z"}
+{"level":"info","message":"Search bar is present and enabled","timestamp":"2025-12-25T13:56:58.137Z"}
+{"level":"info","message":"Test: should display category navigation menu","timestamp":"2025-12-25T13:56:58.393Z"}
+{"level":"info","message":"Test: should show no results for an invalid product","timestamp":"2025-12-25T13:56:58.454Z"}
+{"level":"info","message":"Hovering Men menu","timestamp":"2025-12-25T13:56:59.310Z"}
+{"level":"info","message":"Navigated to Flipkart home page","timestamp":"2025-12-25T13:56:59.766Z"}
+{"level":"info","message":"Navigated to product search page","timestamp":"2025-12-25T13:56:59.866Z"}
+{"level":"info","message":"Locating T-shirts link","timestamp":"2025-12-25T13:57:00.997Z"}
+{"level":"info","message":"T-shirts link found","timestamp":"2025-12-25T13:57:01.023Z"}
+{"level":"info","message":"HealerAgent suggestion: // Suggested fix for: Products after reset still contain 'Apple'","timestamp":"2025-12-25T13:57:01.280Z"}
+{"level":"info","message":"GeneratorAgent code: // Generated code for: Assert no product contains 'Apple' after reset","timestamp":"2025-12-25T13:57:01.282Z"}
+{"level":"info","message":"Finished Mobiles and Tablets Filters tests","timestamp":"2025-12-25T13:57:01.499Z"}
+{"level":"info","message":"Searched for invalid product","timestamp":"2025-12-25T13:57:01.550Z"}
+{"level":"info","message":"HealerAgent suggestion: // Suggested fix for: Navigation menu not visible","timestamp":"2025-12-25T13:57:04.788Z"}
+{"level":"info","message":"Finished Flipkart Home Page UI tests","timestamp":"2025-12-25T13:57:04.931Z"}
+{"level":"info","message":"Search results count: 40","timestamp":"2025-12-25T13:57:04.980Z"}
+{"level":"info","message":"Invalid product search test completed","timestamp":"2025-12-25T13:57:04.982Z"}
+{"level":"info","message":"Finished Product Search tests","timestamp":"2025-12-25T13:57:05.006Z"}
+{"level":"info","message":"Starting Flipkart Home Page UI tests","timestamp":"2025-12-25T13:57:06.484Z"}
+{"level":"info","message":"PlannerAgent subtasks: [\"Subtask for: Test Flipkart home page UI\"]","timestamp":"2025-12-25T13:57:06.487Z"}
+{"level":"info","message":"Test: should allow guest user to browse categories","timestamp":"2025-12-25T13:57:06.782Z"}
+{"level":"info","message":"Navigated to Flipkart home page","timestamp":"2025-12-25T13:57:07.925Z"}
+{"level":"info","message":"HealerAgent suggestion: // Suggested fix for: Guest user cannot browse categories","timestamp":"2025-12-25T13:57:12.951Z"}
+{"level":"info","message":"Finished Flipkart Home Page UI tests","timestamp":"2025-12-25T13:57:13.134Z"}
+{"level":"info","message":"Starting Flipkart Home Page UI tests","timestamp":"2025-12-25T13:57:15.145Z"}
+{"level":"info","message":"PlannerAgent subtasks: [\"Subtask for: Test Flipkart home page UI\"]","timestamp":"2025-12-25T13:57:15.148Z"}
+{"level":"info","message":"HealerAgent suggestion: // Suggested fix for: Banners not visible or layout broken","timestamp":"2025-12-25T13:57:22.148Z"}
+{"level":"info","message":"Finished Flipkart Home Page UI tests","timestamp":"2025-12-25T13:57:22.263Z"}
+{"level":"info","message":"Starting Flipkart Home Page UI tests","timestamp":"2025-12-25T13:57:24.159Z"}
+{"level":"info","message":"PlannerAgent subtasks: [\"Subtask for: Test Flipkart home page UI\"]","timestamp":"2025-12-25T13:57:24.162Z"}
+{"level":"info","message":"HealerAgent suggestion: // Suggested fix for: Footer links not accessible","timestamp":"2025-12-25T13:57:26.143Z"}
+{"level":"info","message":"Finished Flipkart Home Page UI tests","timestamp":"2025-12-25T13:57:26.278Z"}
+{"level":"info","message":"Starting Product Search tests","timestamp":"2025-12-25T13:58:24.938Z"}
+{"level":"info","message":"Starting API CRUD & Security Tests","timestamp":"2025-12-25T13:58:24.957Z"}
+{"level":"info","message":"Starting Flipkart Home Page UI tests","timestamp":"2025-12-25T13:58:24.985Z"}
+{"level":"info","message":"PlannerAgent subtasks: [\"Subtask for: Test product search feature\"]","timestamp":"2025-12-25T13:58:24.947Z"}
+{"level":"info","message":"Test: should support GET, POST, PUT, DELETE methods","timestamp":"2025-12-25T13:58:25.017Z"}
+{"level":"info","message":"Starting Mobiles and Tablets Filters tests","timestamp":"2025-12-25T13:58:25.018Z"}
+{"level":"info","message":"PlannerAgent subtasks: [\"Subtask for: Test Flipkart home page UI\"]","timestamp":"2025-12-25T13:58:24.990Z"}
+{"level":"info","message":"PlannerAgent subtasks: [\"Subtask for: Test mobiles and tablets filters feature\"]","timestamp":"2025-12-25T13:58:25.025Z"}
+{"level":"info","message":"Test: should display search results for a valid product","timestamp":"2025-12-25T13:58:25.401Z"}
+{"level":"info","message":"Test: should load successfully","timestamp":"2025-12-25T13:58:25.454Z"}
+{"level":"info","message":"Setting up MobilesFiltersPage","timestamp":"2025-12-25T13:58:25.471Z"}
+{"level":"info","message":"Test: should validate input (positive & negative)","timestamp":"2025-12-25T13:58:26.716Z"}
+{"level":"info","message":"Navigated to product search page","timestamp":"2025-12-25T13:58:27.211Z"}
+{"level":"info","message":"Test: should return correct HTTP status codes","timestamp":"2025-12-25T13:58:27.260Z"}
+{"level":"info","message":"Navigated to Flipkart home page","timestamp":"2025-12-25T13:58:27.291Z"}
+{"level":"info","message":"Test: should require authentication","timestamp":"2025-12-25T13:58:27.551Z"}
+{"level":"info","message":"Navigated to mobiles filters page","timestamp":"2025-12-25T13:58:27.581Z"}
+{"level":"info","message":"Test: should apply filters correctly","timestamp":"2025-12-25T13:58:27.583Z"}
+{"level":"info","message":"Available brands: Apple, Google, MOTOROLA, vivo, OPPO, Infinix","timestamp":"2025-12-25T13:58:27.780Z"}
+{"level":"info","message":"Testing with brand: OPPO","timestamp":"2025-12-25T13:58:27.780Z"}
+{"level":"info","message":"Test: should not expose sensitive data","timestamp":"2025-12-25T13:58:27.844Z"}
+{"level":"info","message":"Home page loaded and visible","timestamp":"2025-12-25T13:58:28.259Z"}
+{"level":"info","message":"Test: should handle missing/invalid params gracefully","timestamp":"2025-12-25T13:58:28.281Z"}
+{"level":"info","message":"Test: should display visible and clickable Flipkart logo","timestamp":"2025-12-25T13:58:28.540Z"}
+{"level":"info","message":"Test: should adhere to JSON response format","timestamp":"2025-12-25T13:58:28.594Z"}
+{"level":"info","message":"Searched for Samsung S24 Ultra","timestamp":"2025-12-25T13:58:28.727Z"}
+{"level":"info","message":"Test: should support required headers","timestamp":"2025-12-25T13:58:28.866Z"}
+{"level":"info","message":"Test: should enforce rate limiting","timestamp":"2025-12-25T13:58:29.144Z"}
+{"level":"info","message":"Applied filter for brand: OPPO","timestamp":"2025-12-25T13:58:29.838Z"}
+{"level":"info","message":"Test: should respond within reasonable time","timestamp":"2025-12-25T13:58:29.919Z"}
+{"level":"info","message":"Test: should handle errors and exceptions","timestamp":"2025-12-25T13:58:30.220Z"}
+{"level":"info","message":"Navigated to Flipkart home page","timestamp":"2025-12-25T13:58:30.411Z"}
+{"level":"info","message":"Test: should cache repeated requests if supported","timestamp":"2025-12-25T13:58:30.528Z"}
+{"level":"info","message":"Filtered results count: 24","timestamp":"2025-12-25T13:58:30.730Z"}
+{"level":"info","message":"GeneratorAgent code: // Generated code for: Assert at least one product contains 'OPPO'","timestamp":"2025-12-25T13:58:30.732Z"}
+{"level":"info","message":"Filter application test completed","timestamp":"2025-12-25T13:58:30.739Z"}
+{"level":"info","message":"Setting up MobilesFiltersPage","timestamp":"2025-12-25T13:58:30.939Z"}
+{"level":"info","message":"Finished API CRUD & Security Tests","timestamp":"2025-12-25T13:58:31.059Z"}
+{"level":"info","message":"Starting Flipkart T-shirt purchase flow test","timestamp":"2025-12-25T13:58:31.577Z"}
+{"level":"info","message":"Navigating to Flipkart home page","timestamp":"2025-12-25T13:58:31.577Z"}
+{"level":"info","message":"Flipkart logo clicked and verified","timestamp":"2025-12-25T13:58:32.146Z"}
+{"level":"info","message":"Test: should have present and enabled search bar","timestamp":"2025-12-25T13:58:32.597Z"}
+{"level":"info","message":"Search results count: 24","timestamp":"2025-12-25T13:58:32.902Z"}
+{"level":"info","message":"GeneratorAgent code: // Generated code for: Assert search results > 0","timestamp":"2025-12-25T13:58:32.903Z"}
+{"level":"info","message":"Valid product search test completed","timestamp":"2025-12-25T13:58:32.908Z"}
+{"level":"info","message":"Test: should show no results for an invalid product","timestamp":"2025-12-25T13:58:33.123Z"}
+{"level":"info","message":"Navigated to mobiles filters page","timestamp":"2025-12-25T13:58:33.433Z"}
+{"level":"info","message":"Hovering Men menu","timestamp":"2025-12-25T13:58:34.274Z"}
+{"level":"info","message":"Navigated to Flipkart home page","timestamp":"2025-12-25T13:58:34.685Z"}
+{"level":"info","message":"Navigated to product search page","timestamp":"2025-12-25T13:58:35.145Z"}
+{"level":"info","message":"Search bar is present and enabled","timestamp":"2025-12-25T13:58:35.609Z"}
+{"level":"info","message":"Test: should display category navigation menu","timestamp":"2025-12-25T13:58:35.889Z"}
+{"level":"info","message":"Locating T-shirts link","timestamp":"2025-12-25T13:58:35.990Z"}
+{"level":"info","message":"T-shirts link found","timestamp":"2025-12-25T13:58:36.043Z"}
+{"level":"info","message":"Finished Mobiles and Tablets Filters tests","timestamp":"2025-12-25T13:58:36.155Z"}
+{"level":"info","message":"Searched for invalid product","timestamp":"2025-12-25T13:58:36.651Z"}
+{"level":"info","message":"Navigated to Flipkart home page","timestamp":"2025-12-25T13:58:38.062Z"}
+{"level":"info","message":"Search results count: 40","timestamp":"2025-12-25T13:58:40.231Z"}
+{"level":"info","message":"Invalid product search test completed","timestamp":"2025-12-25T13:58:40.232Z"}
+{"level":"info","message":"Finished Product Search tests","timestamp":"2025-12-25T13:58:40.259Z"}
+{"level":"info","message":"Finished Flipkart Home Page UI tests","timestamp":"2025-12-25T13:58:48.191Z"}
+{"level":"info","message":"Starting Flipkart Home Page UI tests","timestamp":"2025-12-25T13:58:50.145Z"}
+{"level":"info","message":"PlannerAgent subtasks: [\"Subtask for: Test Flipkart home page UI\"]","timestamp":"2025-12-25T13:58:50.147Z"}
+{"level":"info","message":"Test: should allow guest user to browse categories","timestamp":"2025-12-25T13:58:50.410Z"}
+{"level":"info","message":"Navigated to Flipkart home page","timestamp":"2025-12-25T13:58:51.595Z"}
+{"level":"info","message":"Finished Flipkart Home Page UI tests","timestamp":"2025-12-25T13:59:01.742Z"}
+{"level":"info","message":"Starting Flipkart Home Page UI tests","timestamp":"2025-12-25T13:59:03.722Z"}
+{"level":"info","message":"PlannerAgent subtasks: [\"Subtask for: Test Flipkart home page UI\"]","timestamp":"2025-12-25T13:59:03.726Z"}
+{"level":"info","message":"Finished Flipkart Home Page UI tests","timestamp":"2025-12-25T13:59:15.751Z"}
+{"level":"info","message":"Starting Flipkart Home Page UI tests","timestamp":"2025-12-25T13:59:17.716Z"}
+{"level":"info","message":"PlannerAgent subtasks: [\"Subtask for: Test Flipkart home page UI\"]","timestamp":"2025-12-25T13:59:17.719Z"}
+{"level":"info","message":"Finished Flipkart Home Page UI tests","timestamp":"2025-12-25T13:59:20.471Z"}

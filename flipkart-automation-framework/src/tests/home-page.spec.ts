@@ -57,77 +57,45 @@ test.describe('Flipkart Home Page UI', () => {
     logInfo('Test: should display category navigation menu');
     await page.goto('https://www.flipkart.com/');
     logInfo('Navigated to Flipkart home page');
-    const navMenu = page.locator('nav, div[role="navigation"], .eFQ30H');
-    try {
-      await expect(navMenu).toBeVisible();
-      // Use generator agent to log a code generation
-      const code = generator.generateCode('Assert navigation menu is visible');
-      logInfo('GeneratorAgent code: ' + code);
-      logInfo('Category navigation menu is visible');
-    } catch (error) {
-      // Use healer agent to suggest a fix
-      const fix = healer.heal('Navigation menu not visible');
-      logInfo('HealerAgent suggestion: ' + fix);
-      throw error;
-    }
+    await page.waitForLoadState('domcontentloaded');
+    // Updated selector for navigation menu
+    const navMenu = page.locator('nav[role="navigation"], header nav, .navbar');
+    await expect(navMenu).toBeVisible({ timeout: 10000 });
+    logInfo('Category navigation menu is visible');
   });
 
   test('should allow guest user to browse categories', async ({ page }) => {
     logInfo('Test: should allow guest user to browse categories');
     await page.goto('https://www.flipkart.com/');
     logInfo('Navigated to Flipkart home page');
-    const firstCategory = page.locator('nav a, .eFQ30H a').first();
-    try {
-      await expect(firstCategory).toBeVisible();
-      await firstCategory.click();
-      await expect(page).not.toHaveURL('https://www.flipkart.com/');
-      // Use generator agent to log a code generation
-      const code = generator.generateCode('Assert guest user can browse categories');
-      logInfo('GeneratorAgent code: ' + code);
-      logInfo('Guest user browsed category');
-    } catch (error) {
-      // Use healer agent to suggest a fix
-      const fix = healer.heal('Guest user cannot browse categories');
-      logInfo('HealerAgent suggestion: ' + fix);
-      throw error;
-    }
+    await page.waitForLoadState('domcontentloaded');
+    // Updated selector for category link
+    const firstCategory = page.locator('nav[role="navigation"] a, header nav a, .navbar a').first();
+    await expect(firstCategory).toBeVisible({ timeout: 10000 });
+    await firstCategory.click();
+    await expect(page).not.toHaveURL('https://www.flipkart.com/');
+    logInfo('Guest user browsed category');
   });
 
   test('should load banners without breaking layout', async ({ page }) => {
     await page.goto('https://www.flipkart.com/');
-    const banners = page.locator('img[alt*="banner"], ._2OHU_q, ._3qGmMb');
-    try {
-      await expect(banners.first()).toBeVisible();
-      // Use generator agent to log a code generation
-      const code = generator.generateCode('Assert banners are visible and layout is not broken');
-      logInfo('GeneratorAgent code: ' + code);
-      // Check for no horizontal scroll (layout break)
-      const hasScroll = await page.evaluate(() => document.body.scrollWidth > document.body.clientWidth);
-      expect(hasScroll).toBeFalsy();
-    } catch (error) {
-      // Use healer agent to suggest a fix
-      const fix = healer.heal('Banners not visible or layout broken');
-      logInfo('HealerAgent suggestion: ' + fix);
-      throw error;
-    }
+    await page.waitForLoadState('domcontentloaded');
+    // Updated selector for banners
+    const banners = page.locator('img[alt*="banner"], .banner, .main-banner');
+    await expect(banners.first()).toBeVisible({ timeout: 10000 });
+    // Check for no horizontal scroll (layout break)
+    const hasScroll = await page.evaluate(() => document.body.scrollWidth > document.body.clientWidth);
+    expect(hasScroll).toBeFalsy();
   });
 
   test('should have accessible footer links', async ({ page }) => {
     await page.goto('https://www.flipkart.com/');
-    const footer = page.locator('footer, ._3JHi7F');
-    try {
-      await expect(footer).toBeVisible();
-      const links = footer.locator('a');
-      await expect(links.first()).toBeVisible();
-      await expect(await links.count()).toBeGreaterThan(0);
-      // Use generator agent to log a code generation
-      const code = generator.generateCode('Assert footer links are accessible');
-      logInfo('GeneratorAgent code: ' + code);
-    } catch (error) {
-      // Use healer agent to suggest a fix
-      const fix = healer.heal('Footer links not accessible');
-      logInfo('HealerAgent suggestion: ' + fix);
-      throw error;
-    }
+    await page.waitForLoadState('domcontentloaded');
+    // Updated selector for footer
+    const footer = page.locator('footer[role="contentinfo"], footer, .footer, #seo--footer');
+    await expect(footer).toBeVisible({ timeout: 10000 });
+    const links = footer.locator('a');
+    await expect(links.first()).toBeVisible({ timeout: 10000 });
+    expect(await links.count()).toBeGreaterThan(0);
   });
 });

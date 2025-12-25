@@ -1,0 +1,28 @@
+# Node modules
+node_modules/
+
+# Playwright output
+playwright-report/
+
+# Allure output
+allure-report/
+
+# Test results
+*.log
+test-results/
+
+# VS Code settings
+.vscode/
+
+# Environment files
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Coverage
+coverage/
+
+# Compiled files
+*.tsbuildinfo

@@ -94,11 +94,14 @@ test.describe('Mobiles and Tablets Filters', () => {
         console.log('Testing reset with brand:', brand);
         await mobilesFiltersPage.applyFilter('Brand', brand);
         await mobilesFiltersPage.resetFilters();
+        // Wait for filters to be reset and page to update
+        await page.waitForLoadState('networkidle');
+        // Optionally, check that filter UI is reset
+        const isFilterReset = await mobilesFiltersPage.isFilterReset('Brand');
+        expect(isFilterReset).toBeTruthy();
         const results = await mobilesFiltersPage.getFilteredResults();
-        // Negative case: if no products, log and screenshot
         if (results.length === 0) {
             await page.screenshot({ path: 'reset-no-products.png' });
-            // Use healer agent to suggest a fix
             const fix = healer.heal('No products found after resetting filters');
             logInfo('HealerAgent suggestion: ' + fix);
             throw new Error('No products found after resetting filters. See reset-no-products.png');
@@ -106,12 +109,10 @@ test.describe('Mobiles and Tablets Filters', () => {
         // If any product contains the brand, log and screenshot
         if (results.some(name => name.toLowerCase().includes(brand.toLowerCase()))) {
             await page.screenshot({ path: 'reset-still-brand.png' });
-            // Use healer agent to suggest a fix
             const fix = healer.heal(`Products after reset still contain '${brand}'`);
             logInfo('HealerAgent suggestion: ' + fix);
             console.error(`Products after reset still contain '${brand}':`, results);
         }
-        // Use generator agent to log a code generation
         const code = generator.generateCode(`Assert no product contains '${brand}' after reset`);
         logInfo('GeneratorAgent code: ' + code);
         expect(results.some(name => name.toLowerCase().includes(brand.toLowerCase()))).toBeFalsy();
