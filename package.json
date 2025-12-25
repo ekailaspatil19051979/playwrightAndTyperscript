@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "allure-commandline": "^2.36.0",
+    "allure-playwright": "^3.4.3",
+    "mcp-server": "^0.0.9",
+    "playwright": "^1.57.0"
+  },
+  "dependencies": {
+    "winston": "^3.19.0"
+  }
+}

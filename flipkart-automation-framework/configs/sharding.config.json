@@ -1,0 +1,12 @@
+{
+  "shardCount": 4,
+  "maxRetries": 2,
+  "parallelWorkers": {
+    "default": 2,
+    "dev": 1,
+    "qa": 2,
+    "prod": 3
+  },
+  "testTimeout": 30000,
+  "shardStrategy": "roundRobin"
+}

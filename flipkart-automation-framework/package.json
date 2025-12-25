@@ -1,0 +1,32 @@
+{
+  "name": "flipkart-automation-framework",
+  "version": "1.0.0",
+  "description": "Automation framework for Flipkart using Playwright and TypeScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:ci": "playwright test --reporter=dot",
+    "test:shard": "playwright test --shard={0..2}",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "playwright": "^1.20.0",
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.2",
+    "eslint": "^7.32.0",
+    "prettier": "^2.5.1",
+    "@types/jest": "^27.0.0",
+    "@types/node": "^16.11.7"
+  },
+  "keywords": [
+    "automation",
+    "testing",
+    "playwright",
+    "typescript"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
